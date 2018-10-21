@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Fundamentals - Objects & Images</title> <!-- The title of the document-->
+    <meta name="author" content="Me" /> <!-- meta tags includes metadata such as
+                                             keywords.  Used by search engines.
+                                             Provides direction to browsers or
+                                             search engines. -->
+    <meta name="description" content="The Fundamentals of HTML 5 Objects Images" />
+    <meta name="keywords" content="HTML5 fundamentals Objects Images" />
+    <!-- <link rel="stylesheet"  type="text/css" href="HTMLFundamentals_Links.css"> -->
+  </head>
+  <body>
+    <h1>HTML Fundamentals - Objects & Images</h1>
+    <p>HTML objects are things like plug-ins like Flash, Silverlight, etc. Other
+       objects are applets and videos. Html images reference image files.</p>
+    <p>Image sizing matters, especially when it comes to tranlating pages for
+       mobile.  So use the sizing attributes for page layout, but make sure the
+       size of the image is appropriate to begin with so you aren't taking a hit
+       on the downloading images of unnecessarily large sizes, given the sizing
+       that happens in html.</p>
+
+    <!-- H2 through H6 are subheadings -->
+    <h2>Overview</h2>
+
+    <h3>Images</h3>
+    <div>
+      <img src=".\images\upthroughtrees.png" alt="Up Through the Trees"/>
+    </div>
+
+    <h3>Objects</h3>
+    <div>
+      <p>Object tag allows us to specify particlar details about our application
+      and param tag allows you to further tailor info about the app. You can
+      next object tags.  Used to extend the browser and inlclude things like
+      video and applications. If the media type isn't supported it will renders
+      what is in the span tag, it's like the alt tag on img elements.</p>
+
+        <object data="data:application/x-silver-2," type="application/x-xilverlight-2">
+          <param name="source" value="./apps/SilverlightObjectDemo.xap" />
+          <param name="initParams" value="TextMessage=Do not use marquees in your HTML">
+          <span>You do not seem to have Silverlight or put a link for end user to
+          get SilverLight here.</span>
+        </object>
+
+    </div>
+  </body>
+</html>
