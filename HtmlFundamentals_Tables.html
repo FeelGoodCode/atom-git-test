@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Fundamentals - Tables</title> <!-- The title of the document-->
+    <meta name="author" content="Me" /> <!-- meta tags includes metadata such as
+                                             keywords.  Used by search engines.
+                                             Provides direction to browsers or
+                                             search engines. -->
+    <meta name="description" content="The Fundamentals of HTML 5 Links" />
+    <meta name="keywords" content="HTML5 fundamentals Links" />
+    <!-- <link rel="stylesheet"  type="text/css" href="HTMLFundamentals_Links.css"> -->
+  </head>
+  <body>
+    <h1>HTML Fundamentals - Tables</h1>
+    <p>Tables provide structure to data. Tables should not be used for formatting
+      a page layout, but rather explictly used for dipslaying data that lends
+      to being displayed in a table./p>
+
+    <!-- H2 = H6 are subheadings -->
+    <h2>Overview</h2>
+    <div>
+      <p>Tables are made of the several different HTML elements.
+      <ul>
+        <li>&lt;caption&gt; : Table title</li>
+        <li>&lt;thead&gt; : Single row, usually for column headers</li>
+        <li>&lt;tr&gt; : defines table row, required in header, body and footer</li>
+        <li>&lt;th&gt; : defines a cell for data in column header within an individual row in header.</li>
+        <li>&lt;td&gt; : defines a cell for data in the body or footer</li>
+        <li>&lt;tfoot&gt; : Single row usually for totals, summary, etc., comes before the body.</li>
+        <li>&lt;tbody&gt;: Multiple rows presenting data</li>
+      </ul>
+    </div>
+
+  <table border="1" summmary="This table list the various HTML tags used for HTML table creation.">
+    <caption>Element Tags for Creating HTML Tables</caption>
+    <thead>
+      <tr>
+        <th>HTML Tag</th>
+        <th>Usage</th>
+      </tr>
+    </thead>
+
+    <tfoot>
+      <tr>
+        <td colspan="2">Do not use tables to layout your document on the screen.
+                       It is better to use divs and css for page layouts and more complicated table structures.
+        </td>
+      </tr>
+    </tfoot>
+
+    <tbody>
+      <tr>
+        <td>&lt;caption&gt;</td>
+        <td>The title of the table</td>
+      </tr>
+      <tr>
+        <td>&lt;thead&gt;</td>
+        <td>Single row, usually for column headers</td>
+      </tr>
+      <tr>
+        <td>&lt;tr&gt;</td>
+        <td>Defines table row, required in header, body and footer</td>
+      </tr>
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>Defines a cell for data in column header within an individual row in header</td>
+      </tr>
+      <tr>
+        <td>&lt;td&gt;</td>
+        <td>Defines a cell for data in the body or footer</td>
+      </tr>
+      <tr>
+        <td>&lt;tfoot&gt;</td>
+        <td>Single row usually for totals, summary, etc., comes before the body</td>
+      </tr>
+      <tr>
+        <td>&lt;tbody&gt;</td>
+        <td>Multiple rows representing data</td>
+      </tr>
+      <tr>
+        <td>&lt;colspan&gt; or &lt;rowspan&gt;</td>
+        <td>Attributes used on table cells to span across columsn or rows</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Formatting tables can ahppen with attributes such aside
+    <ul>
+      <li>width (align is deprecated)</li>
+      <li>border (not a lot of control with this)</li>
+      <li>cell padding - padding inside cell (works well with border not with frame and rules)</li>
+      <li>cell spacing - spacing between the cells (same note as cell padding)</li>
+      <li>no wrap (be careful with this one, use sparingly or not at all.)</li>
+      <li>frame and rules (use instead of border to give border and the vertical and horizontal rules separating tables and columns)</li>
+
+    </ul>
+  </p>
+
+
+    <table width="500px" cellpadding="5" cellspacing="10" align="center" border="20" summmary="This table list the various HTML tags used for HTML table creation.">
+      <caption>Element Tags for Creating HTML Tables</caption>
+      <thead>
+        <tr>
+          <th>HTML Tag</th>
+          <th>Usage in Tables</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Do not use tables to layout your document on the screen.
+                         It is better to use divs and css for page layouts and more complicated table structures.
+          </td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>&lt;caption&gt;</td>
+          <td>The title of the table</td>
+        </tr>
+        <tr>
+          <td>&lt;thead&gt;</td>
+          <td>Single row, usually for column headers</td>
+        </tr>
+        <tr>
+          <td>&lt;tr&gt;</td>
+          <td>Defines table row, required in header, body and footer</td>
+        </tr>
+        <tr>
+          <td>&lt;th&gt;</td>
+          <td>Defines a cell for data in column header within an individual row in header</td>
+        </tr>
+        <tr>
+          <td>&lt;td&gt;</td>
+          <td>Defines a cell for data in the body or footer</td>
+        </tr>
+        <tr>
+          <td>&lt;tfoot&gt;</td>
+          <td>Single row usually for totals, summary, etc., comes before the body</td>
+        </tr>
+        <tr>
+          <td>&lt;tbody&gt;</td>
+          <td>Multiple rows representing data</td>
+        </tr>
+        <tr>
+          <td>&lt;colspan&gt; or &lt;rowspan&gt;</td>
+          <td>Attributes used on table cells to span across columsn or rows</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
