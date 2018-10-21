@@ -17,18 +17,30 @@
   <script type"text/javascript">
     window.onload = function(){
       //alert("window loaded");
-      document.getElementById('helloWorldMsg').innerHTML = "Hello World from JavaScript!"
+      //document.getElementById('helloWorldMsg').innerHTML = "Hello World from JavaScript!"
     }
   </script> <!-- Includes script for interactive pages -->
   <!-- Or do soemthing like
       <script src="HTMLFundamentals_index.js"  type="text/javascript" /> -->
 
-  <style>
+  <style type="text/css">
     body {
-      color: blue
+      color: blue;
+    }
+    p {
+      color: green;
+    }
+    acronym{
+      color: black;
+    }
+    .highlight{
+      text-decoration: underline;
+    }
+    abbr {
+      color: orange;
     }
     .helloWorldMsg{
-      color: purple
+      color: purple;
     }
   </style> <!-- Defines styles to apply to <body> elements -->
 
@@ -44,7 +56,95 @@
 </head>
 <body> <!-- body area for content (text, lists, links, tables, imgs, etc)
             presented to document user -->
-   <p id="helloWorldMsg" class="helloWorldMsg">Hello World!</p>
+   <!-- <p id="helloWorldMsg" class="helloWorldMsg">Hello World!</p> -->
+
+   <!-- HTML Headings provide visual and logical grouping of content. -->
+   <!-- H1 used be search headings, only include one per page -->
+   <h1>HTML Fundamentals</h1>
+
+   <!-- H2 = H6 are subheadings -->
+   <h2>Overview</h2>
+   <div id="overviewContainer">
+     <p>HTML drives the web.  Whether you use ID, Chrome, Firefox, Safari or some
+     other browser, many of us us the web daily.  In this course you will learn
+     the fundamental elements of creating web pages using HTML.</p>
+   <h3>Objectives</h3>
+   <h3>Outline</h3>
+   <!-- <h5>Heading Five - h5</h5>
+   <h6>Heading Six - h6</h6> -->
+   </div>
+   <!-- Block Elements - container elements for grouping, can contain other
+        block elements and inline elements. -->
+        <!-- div elements are block level elements. Whatever follows, renders on
+             its own line on the document page. -->
+        <!-- Other block elements: <p></p>, -->
+        <div id="overviewContainer">This is my <div>overview</div>content!</div>
+   <!-- Inline Elements - containers for text and other inline elements.  They
+       can't contain block elements.-->
+        <!-- span elements are inline level elements.  It renders inline with Whatever
+             it proceeds or follows. -->
+        <div id="secondDiv">This is Second Div with <span>WORLD</span> that surrounds the word WORLD.</div>
+
+   <!-- Whitespace generally ignored in block and inline elements. Must be
+        explicit about when you want to use whitespace.
+          The <pre> element respects whitespace.
+          The <br/> implements the line break.
+          The <hr/> implmoents the horizontal rule line
+          Other Character entities:
+              &nbsp - non-breaking space, space which cannot be used for line breaks
+              &lt; &gt, etc. entites for HTML markup. -->
+
+   <h2>Examples</h2>
+   <div id="exampleContainer">
+     <h3>Whtiespace</h3>
+     <p>HTML drives the web.  Whether you use ID, Chrome, Firefox, Safari or some
+     other browser, many of us us the web daily.  In this&nbsp;course you will learn
+     the fundamental elements of creating web pages using HTML.</p>
+     <hr/>
+     <pre>
+        This is a haiku
+    A boring haiku for you
+        This is a haiku.
+     </pre>
+     <hr/>
+     <span>First Span</span><br/><span>Second Span</span>
+     <hr/>
+     <div>This is how you do a &ltdiv&gt</div>
+     <hr/>
+   </div>
+
+   <!-- many tags for correctly displaying text content. -->
+   <p>
+     <div>x<sup>3</sup> superscript</div>
+     <div>y<sub>4</sub> subscript</div>
+   </p>
+
+   <p>
+     <div><cite>Tim Berners-Lee</cite>Use cite tag to cite work by another.</div>
+   </p>
+
+   <p>
+     <div><abbr  class="highlight" title="Abbreviation">HTML</abbr>abbrev. element</div>
+
+   <div class="highlight"><acronym title="Hypertext Markup Language"> acronym element</acronym></div>
+  </p>
+
+  <p>
+    <div><em> italics (usually use stylesheet for this kind of formatting) </em></div>
+    <div><strong> bold  (usually use stylesheet for this kind of formatting) </strong></div>
+  </p>
+
+  <p>
+    <div><kbd> keboard inputs </kbd></div>
+    <div><var> code varialbes <var></div>
+  </p>
+
+  <p>
+   <blockquote cite="http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt">
+               block level blockquotes with cite attribute.
+   </blockquote>
+   <div><q> inline level quotes </q></div>
+ </p>
 
 </body>
 </html>
